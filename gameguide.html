@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
 
 
     </style>
@@ -15,22 +16,23 @@
     <div id="content">
         <div id="banner">
             <h1>my website</h1>
-            <a href="about.html">about me</a> |
+            <a href="index.html">my website</a>
+            <a href="about.html">about my self</a> |
             <a href="gameguide.html">get to school</a>
+            <p onclick="changeSheet()">Change Color</p>
         </div>
         <div id="blogposts">
             <div class="post">
                 <h2>play my game</h2>
-                <p>Click <a href="about.html">here</a>to play</p>
+                <p>This game teaches me about coding. It also helps me learn how to read flow charts. I is basicly an easyer version of codeing but it teaches you the basics of coding just in a fun way.</p>
             </div>
-        </div>
         <div class="post">
-            <h2>play my game</h2>
-            <p>click <a herf="gettoschool/index.html">here</a>to play.</p>
-           </div>
-        </div class="post">
+            <h2>About my game</h2>
+            <p>my game has many things that you can do. Some of them are that you can go fishing and fight boss battles. I also have a bank were you can put money in you earn. THeir is also chest around the map where you can get items to use or food.</p>
+           <div>
+        </div id="post">
             <h2>gallery</h2>
-            <div class="gallery">
+            <div id="gallery">
                 <a href="img/gamescreen.png"> <img src="img/gamescreen.png" alt=""></a>
                 <a href="img/home.png"> <img src="img/home.png" alt=""></a>
                 <a href="img/inside.png"> <img src="img/inside.png" alt=""></a>
@@ -38,4 +40,26 @@
     </div>
 </body>
 
+<script>
+
+    var lightMode = true;
+
+    function changeSheet() {
+        // make light mode equal not light mode 
+        lightMode =!lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if light mode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media ="";
+            lightSheet.media ="none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media ="none";
+            lightSheet.media ="";
+        }
+    }
+
+</script>
 </html>

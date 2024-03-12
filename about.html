@@ -4,24 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="content">
         <div id="banner">
                 <h1>my website</h1>
-                <a href="about.html">about me</a> |
+                <a href="index.html">my website</a>
+                <a href="about.html">about my self</a> |
                 <a href="gameguide.html">get to school</a>
+                <p onclick="changeSheet()">Change Color</p>
         </div>
         <div id="blogposts">
             <div class="post">
                 <h2>About me</h2>
-                <p>My name is jeron and i like to play games.</p>
-                <p>I also like to go outside and hangout with friends.</p>
-                
+                <p>My name is jeron and i like to play games. I also like to ride my bike. I am a nice persion and i get along with most people.I also like to go outside and hangout with friends. I also like to go fishing. I like to go ouside and enjoy nature.</p>
+                <img src="img/nature.jpg" alt="nature">
             </div>
         </div>
         
     </div>
 </body>
+
+<script>
+
+    var lightMode = true;
+
+    function changeSheet() {
+        // make light mode equal not light mode 
+        lightMode =!lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if light mode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media ="";
+            lightSheet.media ="none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media ="none";
+            lightSheet.media ="";
+        }
+    }
+
+</script>
+
+
 </html>

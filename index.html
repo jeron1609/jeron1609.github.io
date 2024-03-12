@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+    <link id="lightSheet" rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body>
-    <div id="content"></div>
-        <h1> welcome to my website</h1>
-        <p>click image to play my game.</p>
-        <a href="cometoschool5/index.html">
-            <img src="img/download.jfif" alt="jet">
-        </a>
+    <div id="content">
+        <div id="banner">
+            <h1>my website</h1>
+            <a href="index.html">my website</a>
+            <a href="about.html">about my self</a> |
+            <a href="gameguide.html">get to school</a>
+            <p onclick="changeSheet()">Change Color</p>
+        </div>
+        <div>
+        <div id="blogposts">
+            <div class="post">
+                <h2>About me</h2>
+                <p>My name is jeron and i like to play games. This is a rpg maker game that i made. You can do all kinds of things. This game helps me understand code more. </p>
+                <p>Click <a href="about.html">here</a> to learn more about me.</p>
+        <div class="post">
+            <h2 style="display: block;">Get to school</h2>
+            <img src="img/game screen.png" alt="game loading screen" class="left">
+            <p>Get to school is about a game where you make the game and do all kinds of things.
+            you can also make houses and items. i made a monster that fights you and if you win you get something.
+            This game is coding but it is basicly easyer codeing.
+            </p>
+            <p>Click <a href="cometoschool5/index.html">here</a> to play</p>
+        </div>
+    </div>
     </div>
 </body>
+
+<script>
+
+    var lightMode = true;
+
+    function changeSheet() {
+        // make light mode equal not light mode 
+        lightMode =!lightMode;
+        var lightSheet = document.getElementById("lightSheet");
+        var darkSheet = document.getElementById("darkSheet");
+        // if light mode turned off, display dark stylesheet
+        if (lightMode == false) {
+            console.log("Turning dark mode on...");
+            darkSheet.media ="";
+            lightSheet.media ="none";
+        } else {
+            console.log("Turning light mode on...");
+            darkSheet.media ="none";
+            lightSheet.media ="";
+        }
+    }
+
+</script>
+
 </html>
