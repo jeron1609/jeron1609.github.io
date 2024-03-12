@@ -1,52 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(92, 92, 4);
-    color: rgb(91, 70, 6);
+    background-color: rgb(227, 227, 227);
+    color: rgb(250, 249, 249);
     margin: 0;
-    padding: 10px;
+    padding: 40px;
 }
 a {
-    color:#10097e
+    color:#cfddd3
 }
 
 a:hover {
-    color: #120a78;
+    color: #2215ce;
 }
 
 a:visited {
     color: rgb(178, 179, 179);
 }
 #content{
-    background-color: #3d3a02;
-    width: 60%;
+    background-color:#c9c022;
+    width: 50%;
     margin: auto;
     border: 1px solid #aeaeae
 }
 
 #banner {
-    background-color: aqua;
+    background-color: #2e22cf;
     text-align: center;
-    margin: 10px;
+    margin: 8px;
 }
 
 #blogpost {
-    margin: 10 px;
+    margin: 10px;
     border: 1px solid #9a8b8b;
-    background-color:rgb(54, 13, 92);
+    background-color:rgb(116, 23, 202);
 
 }
 
 .post {
+    text-align: left;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #a29d9d;
-    background-color: #0e067e;
+    background-color: #c9c022;
+    background-color: #2e22cf;
 }
 
 .post .left {
-    float: left;
+    float: right;
     margin-right: 10px;
     display: block;
+    width: 160px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .post img {
