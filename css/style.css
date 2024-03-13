@@ -1,14 +1,15 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: rgb(19, 4, 2);
-    color: rgb(24, 3, 3);
+    background-color: rgb(255, 255, 255);
+    color: rgb(253, 252, 252);
     padding: 20px;
     margin-left: 40px;
     }
 
 a {
-    color:#cfddd3
+    color:#000000
 }
 
 a:hover {
@@ -39,9 +40,10 @@ a:visited {
     flex-direction: right;
     margin: auto;
     border: 1px solid #9a8b8b;
-    background-color:#c9c022;
+    background-color: red;
     width: 100%;
     border-radius: 25px;
+
 }
 
 .post {
@@ -51,7 +53,6 @@ a:visited {
     background-color: #c9c022;
     background-color: #2e22cf;
     border-radius: 25px;
-    margin-left: 20px;
 }
 
 .post .left {
