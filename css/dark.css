@@ -1,12 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(227, 227, 227);
-    color: rgb(250, 249, 249);
     margin: 0;
-    padding: 40px;
-}
+    background-color: rgb(255, 255, 255);
+    color: rgb(253, 252, 252);
+    padding: 20px;
+    margin-left: 40px;
+    }
+
 a {
-    color:#cfddd3
+    color:#000000
 }
 
 a:hover {
@@ -17,31 +19,39 @@ a:visited {
     color: rgb(178, 179, 179);
 }
 #content{
-    background-color:#c9c022;
-    width: 50%;
+    background-color: #c9c022;
+    width: 60%;
     margin: auto;
-    border: 1px solid #aeaeae
+    border: 1px solid #aeaeae;
+    border-radius: 25px;
+
 }
 
 #banner {
     background-color: #2e22cf;
     text-align: center;
     margin: 8px;
+    border-radius: 25px;
 }
 
-#blogpost {
-    margin: 10px;
+#displayflex {
+    display: flex;
+    flex-direction: left;
+    margin: auto;
     border: 1px solid #9a8b8b;
-    background-color:rgb(116, 23, 202);
+    background-color:#c9c022;
+    width: 100%;
+    border-radius: 25px;
 
 }
 
 .post {
-    text-align: left;
+    text-align: center;
     margin: 10px;
-    padding: 10px;
+    padding: 25px;
     background-color: #c9c022;
     background-color: #2e22cf;
+    border-radius: 25px;
 }
 
 .post .left {
@@ -64,3 +74,4 @@ a:visited {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
